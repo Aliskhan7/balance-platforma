@@ -3,6 +3,7 @@ import ProfileComp from '../components/ProfileComp'
 import ShortContacts from '../components/ShortContacts'
 import Exit from '../components/Exit'
 import ChangeSettings from '../components/ChangeSettings'
+import Level from '../components/Level'
 
 
 // function Profile (props) {
@@ -20,6 +21,7 @@ function Profile (props) {
       {/* <ShortContacts /> */}
       {/* <Exit /> */}
       {/* <ChangeSettings /> */}
+      <Level />
     </div>
   )
 }
