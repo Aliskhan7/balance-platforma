@@ -9,10 +9,10 @@ import nextLevel from '../static/images/nextLevel.svg';
 function Level(props) {
     return (
         <div className='main'>
-            <div className="currentLevel"> <span className='levelNumber'>12</span> <span className='levelTitle'>уровень</span></div>
+            <div className="currentLevel"><span className='levelNumber'>12</span> <span className='levelTitle'>уровень</span></div>
             <div className="progressBar">
                 <img className='emptyLine' src={emptyLine} alt="" />
-                <img className='fillLineLine'src={fillLine} alt="" />
+                <img className='fillLineLine' src={fillLine} alt="" />
                 <img className='nextLevel' src={nextLevel} alt="" />
             </div>
             <div className="nextLevelInfo">до следующего уровня 64 балла</div>
