@@ -8,8 +8,8 @@ import Store from './pages/Store'
 function App() {
   return (
     <div>
-      <Header />
-      <SideBar/>
+      {/* <Header />
+      <SideBar/> */}
       <div className="content">
         <Route exact path="/Profile" component={Profile} />
         <Route path="/Rating" component={Rating} />
