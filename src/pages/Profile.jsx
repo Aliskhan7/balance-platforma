@@ -1,5 +1,6 @@
 import React from 'react'
 import ProfileComp from '../components/ProfileComp'
+import ShortContacts from '../components/ShortContacts'
 
 
 // function Profile (props) {
@@ -13,7 +14,8 @@ import ProfileComp from '../components/ProfileComp'
 function Profile (props) {
   return (
     <div>
-      <ProfileComp />
+      {/* <ProfileComp /> */}
+      {/* <ShortContacts /> */}
     </div>
   )
 }
