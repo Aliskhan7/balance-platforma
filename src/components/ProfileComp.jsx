@@ -1,6 +1,6 @@
 import React from 'react'
 import profile_icon from '../static/images/profile_icon.svg'
-import profileComp from '../static/css/profileComp.css';
+import ProfileCompStyle from '../static/css/ProfileCompStyle.css';
 
 function ProfileComp(props) {
   return (
