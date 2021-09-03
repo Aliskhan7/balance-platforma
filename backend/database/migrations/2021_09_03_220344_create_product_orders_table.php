@@ -1,10 +1,11 @@
 <?php
 
+use App\Models\ProductOrder;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserLevelsTable extends Migration
+class CreateProductOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +14,13 @@ class CreateUserLevelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_levels', function (Blueprint $table) {
+        Schema::create('product_orders', function (Blueprint $table) {
             $table->id();
-            $table->integer('level');
-            $table->integer('current_score')->default(0);
-            $table->integer('advance_score')->default(1000);
+
+            $table->enum('status', array_keys(ProductOrder::$statuses));
+
+            $table->foreignId('user_id')->upDelete('cascade');
+            $table->foreignId('product_id')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateUserLevelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_levels');
+        Schema::dropIfExists('product_orders');
     }
 }
