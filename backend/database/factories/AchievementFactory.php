@@ -22,7 +22,9 @@ class AchievementFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'label' => $this->faker->word(),
+            'description' => $this->faker->text(250),
+            'icon_path' => $this->faker->imageUrl(64, 64, 'achievement', true, null, true)
         ];
     }
 }

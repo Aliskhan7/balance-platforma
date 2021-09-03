@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Achievement;
 use Illuminate\Database\Seeder;
 
 class AchievementSeeder extends Seeder
@@ -13,6 +14,6 @@ class AchievementSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Achievement::factory()->make(100)->save();
     }
 }
