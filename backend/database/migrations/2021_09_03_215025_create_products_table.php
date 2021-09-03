@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('label');
             $table->string('description')->nullable();
             $table->integer('price');
+            $table->string('image_path');
             $table->enum('type', array_keys(Product::$types));
             $table->timestamps();
         });
