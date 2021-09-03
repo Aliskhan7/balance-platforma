@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+div:nth-child(1) {
+    display: flex;
+    width: 320px;
+}
+
+.img {
+    height: 64px;
+    width: 64px;
+    left: 392px;
+    top: 151px;
+    border-radius: 0;
+}
+
+.shortInfo{
+    margin-left: 12px;  
+}
+
+.name {
+    height: 29px;
+    width: 237px;
+    left: 468px;
+    top: 151px;
+    border-radius: 0;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.id {
+    height: 22px;
+    width: 95px;
+    left: 468px;
+    top: 188px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: inline;
+}
