@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileComp from '../components/ProfileComp'
 import ShortContacts from '../components/ShortContacts'
 import Exit from '../components/Exit'
+import ChangeSettings from '../components/ChangeSettings'
 
 
 // function Profile (props) {
@@ -18,6 +19,7 @@ function Profile (props) {
       {/* <ProfileComp /> */}
       {/* <ShortContacts /> */}
       {/* <Exit /> */}
+      {/* <ChangeSettings /> */}
     </div>
   )
 }
