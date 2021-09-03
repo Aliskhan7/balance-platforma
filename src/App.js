@@ -4,17 +4,28 @@ import SideBar from './components/SideBar'
 import Profile from './pages/Profile'
 import Rating from './pages/Rating'
 import Store from './pages/Store'
+import './styles/main.css'
+import Pages from './pages/Pages'
+import { loadLinks, loadPages } from './redux/actions'
+import { useEffect } from 'react'
+import {useDispatch} from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() =>{
+    dispatch(loadLinks());
+    dispatch(loadPages());
+  }, [])
+
+
   return (
     <div>
       <Header />
       <SideBar/>
-      <div className="content">
-        <Route exact path="/Profile" component={Profile} />
-        <Route path="/Rating" component={Rating} />
-        <Route path="/Store" component={Store} />
-      </div>
+        <Route path='/:id?'>
+           <Pages/>
+        </Route>
     </div>
   );
 }
