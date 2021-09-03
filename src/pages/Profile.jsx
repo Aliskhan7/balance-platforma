@@ -4,7 +4,8 @@ import ShortContacts from '../components/ShortContacts'
 import Exit from '../components/Exit'
 import ChangeSettings from '../components/ChangeSettings'
 import Level from '../components/Level'
-import ScoresAndTokens from '../components/ScoresAndTokens'
+import Scores from '../components/Scores'
+import Tokens from '../components/Tokens'
 
 
 // function Profile (props) {
@@ -23,7 +24,8 @@ function Profile (props) {
       {/* <Exit /> */}
       {/* <ChangeSettings /> */}
       {/* <Level /> */}
-      <ScoresAndTokens />
+      {/* <Scores /> */}
+      <Tokens />
     </div>
   )
 }
