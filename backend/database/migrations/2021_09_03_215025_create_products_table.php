@@ -1,10 +1,11 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserLevelsTable extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +14,12 @@ class CreateUserLevelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_levels', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->integer('level');
-            $table->integer('current_score')->default(0);
-            $table->integer('advance_score')->default(1000);
+            $table->string('label');
+            $table->string('description')->nullable();
+            $table->integer('price');
+            $table->enum('type', array_keys(Product::$types));
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateUserLevelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_levels');
+        Schema::dropIfExists('products');
     }
 }
