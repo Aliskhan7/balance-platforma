@@ -5,8 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use App\Models\Advance;
-use App\Models\UserLevel;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Model
@@ -17,6 +15,8 @@ class User extends Model
     public const LEVEL_TYPE_MEDIUM = 'MEDIUM';
     public const LEVEL_TYPE_HIGH = 'HIGHT';
     public const LEVEL_TYPE_EXPERT = 'EXPERT';
+
+    const TABLE = 'users';
 
     /**
      * types of user experience level
