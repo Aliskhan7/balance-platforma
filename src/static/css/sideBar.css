@@ -4,10 +4,12 @@
     width: 270px;
     height: 100vh;
     position: relative;
+    background: #fff;
 }
 .sideBar__list{
     margin-top: 70px;
 }
+
 li{
     list-style: none;
     font-size: 18px;

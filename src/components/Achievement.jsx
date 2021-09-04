@@ -6,8 +6,8 @@ import achivmentIcon from '../static/images/achivmentIcon.png'
 
 function Achievement(props) {
     return (
-        <div className='main'>
-            <div className='achievement'>
+        <div className='achievement'>
+            <div className='achievementImg'>
                 <img className='achievementIcon' src={achivmentIcon} alt="icon"></img>
             </div>
             <div className='shortInfo'>

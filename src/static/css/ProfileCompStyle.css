@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-div:nth-child(1) {
+
+.avatar_user{
     display: flex;
-    width: 320px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img {
     height: 64px;
     width: 64px;
-    left: 392px;
-    top: 151px;
-    border-radius: 0;
 }
 
 .shortInfo{
@@ -17,12 +16,8 @@ div:nth-child(1) {
 }
 
 .name {
-    height: 29px;
-    width: 237px;
-    left: 468px;
-    top: 151px;
     border-radius: 0;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -32,12 +27,6 @@ div:nth-child(1) {
 }
 
 .id {
-    height: 22px;
-    width: 95px;
-    left: 468px;
-    top: 188px;
-    border-radius: nullpx;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
