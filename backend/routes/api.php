@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login']);
 
-Route::middleware('auth:sanctum')->get('foo', function() {
-    return response()->json(['bar']);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('profile', [UserController::class, 'profile']);
+    Route::get('rating', [UserController::class, 'rating']);
+    Route::get('tasks', [TaskController::class, 'tasks']);
+    Route::get('store', [ProductController::class, 'products']);
 });
