@@ -79,14 +79,11 @@ body {
 
 form {
     display: flex;
-    flex-direction: column;
 }
 
 .banner-img {
     height: 826px;
     width: 826px;
-    left: 314px;
-    top: 162px;
     border-radius: 0px;
     margin-left: 40px;
 }
@@ -109,19 +106,16 @@ form {
 input {
     height: 54px;
     width: 360px;
-    left: 1188px;
-    top: 587px;
     border-radius: 4px;
     margin-bottom: 16px;
+    font-size: 18px;
 }
 
 input::placeholder {
     height: 22px;
     width: 54px;
-    left: 1212px;
-    top: 603px;
-    border-radius: nullpx;
-    font-family: Inter;
+    border-radius: 0;
+    font-family: 'Inter';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
