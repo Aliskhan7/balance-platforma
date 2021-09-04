@@ -2,30 +2,29 @@ import Header from './components/Header'
 import { Route } from 'react-router-dom'
 import SideBar from './components/SideBar'
 import Profile from './pages/Profile'
+import './styles/main.css'
+import Home from './pages/Home'
 import Rating from './pages/Rating'
 import Store from './pages/Store'
-import './styles/main.css'
-import Pages from './pages/Pages'
-import { loadLinks, loadPages } from './redux/actions'
-import { useEffect } from 'react'
-import {useDispatch} from "react-redux";
+import Teams from './pages/Teams'
+import Tasks from './pages/Tasks'
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() =>{
-    dispatch(loadLinks());
-    dispatch(loadPages());
-  }, [])
 
 
   return (
     <div>
       <Header />
-      <SideBar/>
-        <Route path='/:id?'>
-           <Pages/>
-        </Route>
+      <div className="container">
+        <SideBar/>
+        <div className="content">
+          <Route path="/user_prof" component={Profile} />
+          <Route exact path="/rating" component={Rating} />
+          <Route path="/store" component={Store} />
+          <Route path="/team" component={Teams} />
+          <Route path="/task" component={Tasks} />
+        </div>
+      </div>
     </div>
   );
 }

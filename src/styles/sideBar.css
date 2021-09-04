@@ -3,6 +3,7 @@
     border-right: 1px solid #BDBDBD;
     width: 270px;
     height: 100vh;
+    position: relative;
 }
 .sideBar__list{
     margin-top: 70px;

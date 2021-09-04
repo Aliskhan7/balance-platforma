@@ -6,7 +6,7 @@ function LinkItem (props) {
 
   return (
       <li className={id ? 'active' : ''}>
-        <NavLink className='sideBar__list-item' activeClassName='active' to={`${props.items.id}`}>
+        <NavLink className='sideBar__list-item' activeClassName='active' to={props.items.path}>
           <span>{props.items.icon}</span>
           {props.items.name}
         </NavLink>

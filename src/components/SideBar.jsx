@@ -7,18 +7,22 @@ import LinkItem from './LinkItem'
 function SideBar (outline) {
 
   const menuList = [
-    { icon: icons.home,
-      name: 'Главная'},
     { icon: icons.user_circle,
-      name: 'Профиль'},
+      name: 'Профиль',
+      path: '/user_prof'},
     { icon: icons.trophy,
-      name: 'Рейтинг'},
+      name: 'Рейтинг',
+      path: '/rating'},
     { icon: icons.cart,
-      name: 'Магазин'},
+      name: 'Магазин',
+      path: '/store'},
     { icon: icons.users,
-      name: 'Задания'},
+      name: 'Задания',
+      path: '/task'},
     { icon: icons.clipboard,
-      name: 'Команды'},
+      name: 'Команды',
+      path: '/team'
+    },
   ];
 
   return (
