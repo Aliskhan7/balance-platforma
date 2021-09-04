@@ -6,6 +6,7 @@ import ChangeSettings from '../components/ChangeSettings'
 import Level from '../components/Level'
 import Scores from '../components/Scores'
 import Tokens from '../components/Tokens'
+import Achievement from '../components/Achievement'
 
 
 // function Profile (props) {
@@ -25,7 +26,8 @@ function Profile (props) {
       {/* <ChangeSettings /> */}
       {/* <Level /> */}
       {/* <Scores /> */}
-      <Tokens />
+      {/* <Tokens /> */}
+      {/* <Achievement /> */}
     </div>
   )
 }
