@@ -2,18 +2,19 @@
 
 namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class User extends Model
+class User extends Authenticate
 {
-    use HasFactory;
+    use HasFactory, HasApiTokens;
 
     public const LEVEL_TYPE_LOW = 'LOW';
     public const LEVEL_TYPE_MEDIUM = 'MEDIUM';
-    public const LEVEL_TYPE_HIGH = 'HIGHT';
+    public const LEVEL_TYPE_HIGH = 'HIGH';
     public const LEVEL_TYPE_EXPERT = 'EXPERT';
 
     const TABLE = 'users';
