@@ -11,6 +11,15 @@ class Advance extends Model
 {
     use HasFactory;
 
+    const TABLE = 'advances';
+
+    protected $fillable = [
+        'tokens_count',
+        'overall_score',
+        'today_score',
+        'level_id',
+    ];
+
     /**
      * @return BelongsTo
      */

@@ -13,7 +13,7 @@ class AchievementUser extends Migration
      */
     public function up()
     {
-        Schema::table('achievement_user', function (Blueprint $table) {
+        Schema::create('achievement_user', function (Blueprint $table) {
             $table->id();
             $table->foreignId('achievement_id');
             $table->foreignId('user_id');
