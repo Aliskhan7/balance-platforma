@@ -1,10 +1,10 @@
 import React from 'react'
 import profile_icon from '../static/images/profile_icon.svg'
-import ProfileCompStyle from '../static/css/ProfileCompStyle.css';
+import '../static/css/ProfileCompStyle.css'
 
 function ProfileComp(props) {
   return (
-    <div>
+    <div className='avatar_user'>
       <div className='logo'>
         <img className='img' src={profile_icon} alt="icon" />
       </div>

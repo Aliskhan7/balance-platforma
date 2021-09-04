@@ -1,36 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-.main {
-    height: 153px;
+.level_block {
+    padding: 24px;
     width: 350px;
     border-radius: 4px;
     flex-direction: column;
+    margin-right: 20px;
+    background: #fff;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08));
 }
 
 .levelNumber {
     height: 34px;
     width: 31px;
-    left: 416px;
-    top: 496px;
-    border-radius: nullpx;
     font-family: Inter;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
-    letter-spacing: 0px;
-    text-align: left;
 }
 
 .levelTitle {
     height: 19px;
     width: 65px;
-    border-radius: nullpx;
-    font-family: Inter;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0px;
     text-align: left;
     margin-top: 9px;
     margin-left: 6px;
@@ -47,14 +36,7 @@
 .nextLevelInfo {
     height: 15px;
     width: 195px;
-    border-radius: nullpx;
-    font-family: Inter;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0px;
-    text-align: left;
 }
 
 .emptyLine {

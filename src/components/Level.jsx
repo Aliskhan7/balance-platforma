@@ -8,7 +8,7 @@ import nextLevel from '../static/images/nextLevel.svg';
 
 function Level(props) {
     return (
-        <div className='main'>
+        <div className='level_block'>
             <div className="currentLevel"><span className='levelNumber'>12</span> <span className='levelTitle'>уровень</span></div>
             <div className="progressBar">
                 <img className='emptyLine' src={emptyLine} alt="" />

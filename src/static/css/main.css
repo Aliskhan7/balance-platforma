@@ -5,8 +5,9 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    background: #fafafa;
 }
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
