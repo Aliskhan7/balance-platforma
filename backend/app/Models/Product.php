@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,4 +17,12 @@ class Product extends Model
         self::TYPE_SUBSCRIPTION => 'Подписка',
         self::TYPE_GADGET => 'Гаджеты',
     ];
+
+    /**
+     * @return Builder
+     */
+    public static function getQuery(): Builder
+    {
+        return self::select('*');
+    }
 }

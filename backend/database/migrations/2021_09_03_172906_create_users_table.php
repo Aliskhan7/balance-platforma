@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('phone_number');
             $table->string('email');
             $table->string('password');
+            $table->string('avatar')->nullable();
 
             $table->foreignId('advance_id')
                 ->onUpdate('cascade')
