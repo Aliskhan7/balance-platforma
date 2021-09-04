@@ -28,7 +28,6 @@ function Store(props) {
               </div>
             </div>
           </div>
-
           <div className="storeProduct">
             <img src={storeItem} alt="item" className='storeProductIcon' />
             <div className="storeProductInfo">
@@ -40,7 +39,6 @@ function Store(props) {
               </div>
             </div>
           </div>
-
           <div className="storeProduct">
             <img src={storeItem} alt="item" className='storeProductIcon' />
             <div className="storeProductInfo">

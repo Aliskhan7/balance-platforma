@@ -4,7 +4,7 @@ body{
 }
 
 .showCase {
-    width: 1249px;
+    width: 80.5%;
     height: 316px;
     border-radius: 0px;
     background-image: url('../../images/store_showcase.jpg');
@@ -27,7 +27,7 @@ body{
 }
 
 .storeTitle {
-    width: 137px;
+    width: 13%;
     font-family: 'Inter';
     font-size: 32px;
     font-style: normal;
@@ -39,7 +39,7 @@ body{
 }
 
 .storeDesc {
-    width: 449px;
+    width: 40%;
     font-family: 'Inter';
     font-size: 18px;
     font-style: normal;
@@ -51,7 +51,7 @@ body{
 }
 
 .storeMoney {
-    width: 158px;
+    width: 15%;
     font-family: 'Inter';
     font-size: 18px;
     font-style: normal;
@@ -73,7 +73,7 @@ body{
 }
 
 .categoryName {
-    width: 90px;
+    width: 10%;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -81,7 +81,7 @@ body{
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    margin-left: 120px;
+    margin-left: 65px;
     margin-bottom: 24px;
     margin-top: 77px;
 }
@@ -93,14 +93,13 @@ body{
 
 .storeProduct {
     background: white;
-    height: 195px;
-    width: 401px;
     border-radius: 4px;
     /* border: 1px solid rgb(190, 8, 8); */
     /* box-shadow: 20px 2px gray; */
     display: flex;
     justify-content: space-around;
     margin-left: 24px;
+    padding: 24px 24px 33px 24px;
 }
 
 .storeProductIcon {
@@ -111,7 +110,7 @@ body{
 }
 
 .storeProductInfoTitle {
-    width: 180px;
+    width: 45%;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
@@ -123,7 +122,7 @@ body{
 }
 
 .storeProductInfoDesc {
-    width: 271px;
+    width: 75%;
     font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
@@ -139,7 +138,7 @@ body{
 }
 
 .price {
-    width: 98px;
+    width: 35%;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -153,7 +152,7 @@ body{
 
 .addCart {
     background: white;
-    width: 142px;
+    width: 35%;
     border-radius: 60px;
     border: 1px solid #FF5028;
     padding: 12px, 32px, 12px, 32px;
@@ -165,8 +164,8 @@ body{
 }
 
 .carousel{
-    width: 1000px;
+    width: 75%;
     display: flex;
-    margin-left: 96px;
+    margin-left: 40px;
     justify-content: space-between;
 }
