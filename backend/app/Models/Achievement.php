@@ -10,6 +10,8 @@ class Achievement extends Model
 {
     use HasFactory;
 
+    const TABLE = 'achievements';
+
     /**
      * @return BelongsToMany
      */

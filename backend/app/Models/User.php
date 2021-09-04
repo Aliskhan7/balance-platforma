@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Auth\User as Authenticate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Hash;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -31,6 +33,15 @@ class User extends Authenticate
     ];
 
     /**
+     * password attribute mutator
+     * @param string $password
+     */
+    public function setPasswordAttribute(string $password)
+    {
+        $this->attributes['password'] = Hash::make($password);
+    }
+
+    /**
      * return advance data of user
      * @return HasOne
      */
@@ -55,5 +66,19 @@ class User extends Authenticate
     public function achievements(): BelongsToMany
     {
         return $this->belongsToMany(Achievement::class);
+    }
+
+    /**
+     * @return Builder
+     */
+    public static function getQuery(): Builder
+    {
+        return self::select([
+            self::TABLE . '.*',
+            Advance::TABLE . '.*',
+            UserLevel::TABLE . '.*',
+        ])
+            ->join(Advance::TABLE, Advance::TABLE.'.id', self::TABLE.'.advance_id')
+            ->join(UserLevel::TABLE, UserLevel::TABLE.'.id', Advance::TABLE.'.level_id');
     }
 }
