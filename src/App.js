@@ -2,20 +2,29 @@ import Header from './components/Header'
 import { Route } from 'react-router-dom'
 import SideBar from './components/SideBar'
 import Profile from './pages/Profile'
+import './static/css/main.css'
 import Rating from './pages/Rating'
 import Store from './pages/Store'
+import Teams from './pages/Teams'
+import Tasks from './pages/Tasks'
 import Login from './pages/Login'
 
 function App() {
+
+
   return (
     <div>
-      {/* <Header />
-      <SideBar/> */}
-      <div className="content">
-        <Route exact path="/Profile" component={Profile} />
-        <Route path="/Rating" component={Rating} />
-        <Route path="/Store" component={Store} />
-        <Route path='/Login' component={Login} />
+      <Header />
+      <div className="container">
+        <SideBar/>
+        <div className="content">
+          <Route path="/Login" component={Login} />
+          <Route path="/user_prof" component={Profile} />
+          <Route path="/rating" component={Rating} />
+          <Route path="/store" component={Store} />
+          <Route path="/team" component={Teams} />
+          <Route path="/task" component={Tasks} />
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
-
 .main {
     flex-direction: row;
-    width:  420px!important;
+    width:  420px !important;
     text-align: center;
     height: 128px;
     left: 0px;
@@ -25,8 +24,8 @@
     width: 74px;
     left: 106px;
     top: 24px;
-    border-radius: nullpx;
-    font-family: Inter;
+    border-radius: 0;
+    font-family: "Inter";
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -41,7 +40,7 @@
     width: 272px;
     left: 106px;
     top: 56px;
-    border-radius: nullpx;
+    border-radius: 0;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;

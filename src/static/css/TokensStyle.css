@@ -8,7 +8,7 @@
 .tokensCount {
     height: 34px;
     width: 36px;
-    border-radius: nullpx;
+    border-radius: 0;
     font-family: Inter;
     font-size: 28px;
     font-style: normal;

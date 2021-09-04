@@ -1,0 +1,35 @@
+.sideBar{
+    padding: 140px 0 0 50px;
+    border-right: 1px solid #BDBDBD;
+    width: 270px;
+    height: 100vh;
+    position: relative;
+}
+.sideBar__list{
+    margin-top: 70px;
+}
+li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    margin-bottom: 30px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: #828282;
+}
+li a:hover, svg:hover{
+    color: #FF5028;
+    stroke: #FF5028;
+}
+
+.sideBar__list-item span{
+    margin-right: 15px;
+}
+.active{
+    color: #FF5028;
+}
