@@ -1,0 +1,46 @@
+.typing_block{
+    padding: 50px 140px;
+
+}
+.typing_block h2{
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.typing_block p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #828282;
+    max-width: 500px;
+}
+.typing-test{
+    margin-top: 48px;
+    background: #FFFFFF;
+    padding: 25px;
+    width: 1080px;
+    height: 240px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08));
+    font-size: 18px;
+    text-align: justify;
+}
+.btnStart{
+    text-align: center;
+    background: #FF5028;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid #FF5028;
+    margin: 50px auto;
+    display: flex;
+}
+.btnStart:hover{
+    background: transparent;
+    transition: .3s;
+    border: 1px solid #FF5028;
+    color: #FF5028;
+    cursor: pointer;
+}
