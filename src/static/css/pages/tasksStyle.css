@@ -9,6 +9,10 @@
 .tasks{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    /* flex-wrap: wrap-reverse; */
+>>>>>>> 850a1af137362a1fb2d88d508729a6c86379f990
 }
 
 

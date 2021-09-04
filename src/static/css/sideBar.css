@@ -3,7 +3,8 @@
     border-right: 1px solid #BDBDBD;
     width: 270px;
     height: 100vh;
-    position: relative;
+
+
     background: #fff;
 }
 .sideBar__list{
@@ -28,7 +29,10 @@ li a:hover, svg:hover{
     color: #FF5028;
     stroke: #FF5028;
 }
-
+.sideBar__list-item{
+    display: flex;
+    align-items: center;
+}
 .sideBar__list-item span{
     margin-right: 15px;
 }

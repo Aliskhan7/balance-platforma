@@ -10,6 +10,8 @@ class UserLevel extends Model
 {
     use HasFactory;
 
+    const TABLE = 'user_levels';
+
     /**
      * @return BelongsTo
      */
