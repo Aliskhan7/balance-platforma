@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->foreignId('advance_id')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->foreignId('user_levels_id');
             $table->timestamps();
         });
     }
