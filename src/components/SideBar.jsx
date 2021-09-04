@@ -1,8 +1,9 @@
 import React from 'react'
 import logo from '../img/logo.png'
-import '../styles/sideBar.css'
+import '../static/css/sideBar.css'
 import icons from '../img/icons'
 import LinkItem from './LinkItem'
+import { NavLink } from 'react-router-dom'
 
 function SideBar (outline) {
 
@@ -27,7 +28,9 @@ function SideBar (outline) {
 
   return (
     <div className='sideBar'>
-      <img src={logo} alt=""/>
+      <NavLink to='/Login'>
+        <img src={logo} alt=""/>
+      </NavLink>
       <ul className='sideBar__list'>
         {
           menuList.map(items =>{

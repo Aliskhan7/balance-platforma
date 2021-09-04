@@ -1,0 +1,7 @@
+.user_component{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 0 0 120px;
+    width: 1090px;
+}
