@@ -1,0 +1,17 @@
+.showCase {
+    width: 1700px;
+    height: 316px;
+    border-radius: 0px;
+    position: relative;
+    /* left: 359px; */
+    /* margin-left: 0; */
+    background-image: url('../../images/store_showcase.jpg');
+}
+
+.container {
+    flex-direction: row!important;
+}
+
+.sideBar{
+    box-sizing: border-box;
+}

@@ -6,9 +6,7 @@ body {
     height: 1080px;
 }
 
-.container{
-    flex-direction: column;
-}
+
 
 .containerLogin{
     flex-direction: column;
@@ -85,8 +83,6 @@ form {
 .banner-img {
     height: 826px;
     width: 826px;
-    left: 314px;
-    top: 162px;
     border-radius: 0px;
     margin-left: 40px;
 }
@@ -106,35 +102,37 @@ form {
     text-align: left;
 }
 
+input:nth-child(1){
+    margin-top: 48px;
+}
+
 input {
     height: 54px;
     width: 360px;
-    left: 1188px;
-    top: 587px;
     border-radius: 4px;
     margin-bottom: 16px;
+    font-size: 18px;
+    border: 1px #E0E0E0 solid;
+    padding-left: 20px;
+    outline: none;
 }
 
 input::placeholder {
     height: 22px;
-    width: 54px;
-    left: 1212px;
-    top: 603px;
-    border-radius: nullpx;
-    font-family: Inter;
+    width: 70px;
+    border-radius: 0;
+    font-family: 'Inter';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
 }
 
 .submit-btn {
     height: 54px;
     width: 360px;
-    left: 1188px;
-    top: 747px;
     border-radius: 4px;
     background: #FF5028;
     font-family: Inter;
@@ -145,4 +143,6 @@ input::placeholder {
     letter-spacing: 0em;
     text-align: center;
     color: white;
+    border: none;
+    margin-top: 36px;
 }

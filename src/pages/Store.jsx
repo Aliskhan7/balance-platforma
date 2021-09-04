@@ -1,9 +1,12 @@
 import React from 'react'
+import storeStyle from '../static/css/pages/storeStyle.css'
 
 function Store (props) {
   return (
     <div>
-      store
+      <div className='showCase'>
+
+      </div>
     </div>
   )
 }
