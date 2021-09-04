@@ -7,7 +7,7 @@ import banner from '../static/images/banner.png'
 
 function LogIn (props){
         return(
-            <div className='container'>
+            <div className='containerLogin'>
                 <div className='header'>
                     <img className='logo' src={logo} alt='logo' />
                     <div className='navbar'>
