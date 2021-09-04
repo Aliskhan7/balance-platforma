@@ -11,3 +11,13 @@ body{
     display: flex;
     justify-content: flex-start;
 }
+.content {
+    width: 100%;
+}
+.ratingSelect{
+    border: 1px solid #BDBDBD;
+    height: 30px;
+    width: 180px;
+    border-radius: 4px;
+    margin-left: 10px;
+}

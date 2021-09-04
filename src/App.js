@@ -8,13 +8,14 @@ import Store from './pages/Store'
 import Teams from './pages/Teams'
 import Tasks from './pages/Tasks'
 import Login from './pages/Login'
+import Cart from './pages/Cart'
 
 function App() {
 
 
   return (
     <div>
-      <Header />
+      {/*<Header />*/}
       <div className="container">
         <SideBar/>
         <div className="content">
@@ -24,6 +25,7 @@ function App() {
           <Route path="/store" component={Store} />
           <Route path="/team" component={Teams} />
           <Route path="/task" component={Tasks} />
+          <Route path="/cart" component={Cart} />
         </div>
       </div>
     </div>
