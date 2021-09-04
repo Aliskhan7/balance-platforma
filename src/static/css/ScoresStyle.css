@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.main {
+    height: 153px;
+    width: 240px;
+    border-radius: 4px;
+}
+
+.scoresCount {
+    height: 34px;
+    width: 36px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.scoresTitle {
+    height: 19px;
+    width: 56px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.todayScoresInfo {
+    height: 15px;
+    width: 119px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #828282;
+
+    margin-top: -12px;
+    margin-bottom: 28px;
+}
+
+.generalRating {
+    height: 19px;
+    width: 122px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #2F80ED;
+    text-decoration: none;
+
+}

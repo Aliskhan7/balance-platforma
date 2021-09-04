@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
+
+.logoutIcon {
+    height: 15.999999046325684px;
+    width: 16.000001907348633px;
+    border-radius: 0px;
+}
+
+.logoutBtn {
+    height: 22px;
+    width: 56px;
+    left: 1166px;
+    top: 151px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #2F80ED;
+    text-decoration: none;
+    margin-top: -3px;
+    margin-left: 14px;
+}
