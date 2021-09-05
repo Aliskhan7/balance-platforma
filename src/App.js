@@ -9,6 +9,7 @@ import Teams from './pages/Teams'
 import Tasks from './pages/Tasks'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
+import TypingGame from './pages/TypingGame'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/team" component={Teams} />
           <Route path="/task" component={Tasks} />
           <Route path="/cart" component={Cart} />
+          <Route path="/typingGame" component={TypingGame} />
         </div>
       </div>
     </div>

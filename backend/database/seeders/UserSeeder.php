@@ -17,9 +17,11 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        User::factory()->count(50)->create();
+
         DB::table(User::TABLE)->insert([
-            'full_name' => 'Кирилл',
-            'phone_number' => '+79298952719',
+            'full_name' => 'Кирилл Абдулов',
+            'phone_number' => '+7 929 895 27 91',
             'email' => 'test_1810@mail.ru',
             'password' => Hash::make('password'),
             'advance_id' => Advance::factory()->create()->id,
