@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.pos{
+    opacity: 0;
+}
+
 .level_block {
     padding: 24px;
     width: 35%;
@@ -40,7 +44,6 @@
 }
 
 .nextLevelIcon {
-    position: relative;
     left: 300px;
     top: -33px;
 }
