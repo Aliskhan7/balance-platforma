@@ -19,6 +19,9 @@
 .storeProductInfo{
     margin-top: 24px;
 }
+.storeProduct img{
+    margin-right: 10px;
+}
 
 .storeTitle {
     width: 13%;
