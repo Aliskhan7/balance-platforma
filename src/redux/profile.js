@@ -11,11 +11,6 @@ export const profile = (state = initialState, action) => {
         items: action.payload,
         loading: true
       };
-    case 'profile/start':
-      return{
-        ...state,
-        loading: false
-      }
 
     default:
       return state;

@@ -1,6 +1,9 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function RatingTable (props) {
+  const items = useSelector(state => state.rating)
+
   return (
     <div className='rating_block'>
       <table className='ratingTable'>

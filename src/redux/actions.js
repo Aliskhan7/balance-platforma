@@ -34,7 +34,7 @@ export const startProfile = () => {
   const token = JSON.parse(localStorage.getItem(('token')))
 
   return (dispatch) => {
-    dispatch({type: 'profile/start'})
+
     fetch('http://balance-platform.localhost/api/profile', {
       method: 'GET',
       headers: {
@@ -48,6 +48,7 @@ export const startProfile = () => {
             type: 'profile/success',
             payload: json,
           });
+        console.log(json)
         });
     }
 };
@@ -70,6 +71,7 @@ export const startRating = () => {
           type: 'rating/success',
           payload: json,
         });
+
       });
   }
 };
