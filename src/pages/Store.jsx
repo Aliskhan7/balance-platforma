@@ -57,3 +57,5 @@ function Store(props) {
 }
 
 export default Store
+
+// asdasdasd
