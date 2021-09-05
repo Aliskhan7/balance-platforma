@@ -9,7 +9,7 @@ You will also see any lint errors in the console.
 
 ### `docker`
 
-Run PHP Laravel backend (from root)
+Run PHP Laravel backend (place next to the project folder)
 
 `git clone https://github.com/laradock/laradock.git`
 
