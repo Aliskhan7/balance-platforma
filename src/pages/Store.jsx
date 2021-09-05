@@ -1,10 +1,12 @@
 import React from 'react'
 import storeStyle from '../static/css/pages/storeStyle.css'
 import storeItem from '../static/images/storeItem.svg'
+import storeItemNau from '../img/nau.png'
+import storeItemBand from '../img/band.png'
 
 function Store(props) {
   return (
-    <div>
+    <div className='storeBg'>
       <div className='showCase'>
         <div className="storeInfo">
           <div className='storeTitle'>Магазин</div>
@@ -29,10 +31,38 @@ function Store(props) {
             </div>
           </div>
           <div className="storeProduct">
+            <img src={storeItemBand} alt="item" className='storeProductIcon' />
+            <div className="storeProductInfo">
+              <div className="storeProductInfoTitle">Фитнес браслет</div>
+              <div className="storeProductInfoDesc">Mi Smart Band 6 – это фитнес трекер Xiaomi нового поколения</div>
+              <div className="storeProductInfoPrice">
+                <div className="price">330 токенов</div>
+                <button className="addCart">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div className="storeProduct">
+            <img src={storeItemNau} alt="item" className='storeProductIcon' />
+            <div className="storeProductInfo">
+              <div className="storeProductInfoTitle">Наушники</div>
+              <div className="storeProductInfoDesc">AirPods Pro – лёгкие наушники
+                с функцией шумоподавления</div>
+              <div className="storeProductInfoPrice">
+                <div className="price">330 токенов</div>
+                <button className="addCart">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="storeShowcase">
+        <div className="categoryName">Подписки на разные сервисы</div>
+        <div className="carousel">
+          <div className="storeProduct">
             <img src={storeItem} alt="item" className='storeProductIcon' />
             <div className="storeProductInfo">
-              <div className="storeProductInfoTitle">Xiaomi Powerbank</div>
-              <div className="storeProductInfoDesc">Внешний аккумулятор от Xiaomi на 10000 Mah</div>
+              <div className="storeProductInfoTitle">Netflix</div>
+              <div className="storeProductInfoDesc">Фильмы, сериалы и многое другое без ограничений</div>
               <div className="storeProductInfoPrice">
                 <div className="price">330 токенов</div>
                 <button className="addCart">В корзину</button>
@@ -42,8 +72,19 @@ function Store(props) {
           <div className="storeProduct">
             <img src={storeItem} alt="item" className='storeProductIcon' />
             <div className="storeProductInfo">
-              <div className="storeProductInfoTitle">Xiaomi Powerbank</div>
-              <div className="storeProductInfoDesc">Внешний аккумулятор от Xiaomi на 10000 Mah</div>
+              <div className="storeProductInfoTitle">Netflix</div>
+              <div className="storeProductInfoDesc">Фильмы, сериалы и многое другое без ограничений</div>
+              <div className="storeProductInfoPrice">
+                <div className="price">330 токенов</div>
+                <button className="addCart">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div className="storeProduct">
+            <img src={storeItem} alt="item" className='storeProductIcon' />
+            <div className="storeProductInfo">
+              <div className="storeProductInfoTitle">Netflix</div>
+              <div className="storeProductInfoDesc">Фильмы, сериалы и многое другое без ограничений</div>
               <div className="storeProductInfoPrice">
                 <div className="price">330 токенов</div>
                 <button className="addCart">В корзину</button>
