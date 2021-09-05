@@ -2,8 +2,6 @@ import React from 'react'
 import AchievementStyle from '../static/css/AchievementStyle.css';
 import achivmentIcon from '../static/images/achivmentIcon.png'
 
-
-
 function Achievement(props) {
     return (
         <div className='achievement'>

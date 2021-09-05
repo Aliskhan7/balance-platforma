@@ -20,14 +20,14 @@ li{
     font-weight: 300;
     display: flex;
     align-items: center;
+    font-weight: 500;
 }
 li a{
     text-decoration: none;
     color: #828282;
 }
-li a:hover, svg:hover{
+li a:hover{
     color: #FF5028;
-    stroke: #FF5028;
 }
 .sideBar__list-item{
     display: flex;

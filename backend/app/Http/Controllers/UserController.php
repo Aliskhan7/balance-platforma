@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Achievement;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     /**
@@ -14,7 +15,12 @@ class UserController extends Controller
      */
     public function profile(Request $request): JsonResponse
     {
-        return response()->json(Auth::user());
+        $achievement_ids = DB::table('achievement_user')->where('achievement_user.user_id', Auth::user()->id)->pluck('achievement_id')->toArray();
+
+        return response()->json([
+            'user'=>User::getQuery()->where(User::TABLE.'.id',Auth::user()->id)->get(),
+            'achievements'=> Achievement::whereIn('id', $achievement_ids)->get(),
+        ]);
     }
 
     /**

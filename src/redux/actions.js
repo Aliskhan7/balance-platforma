@@ -31,10 +31,17 @@ export const startLogin = (login, password, history) => {
 };
 
 export const startProfile = () => {
+  const token = JSON.parse(localStorage.getItem(('token')))
+
   return (dispatch) => {
     dispatch({type: 'profile/start'})
-    JSON.parse(localStorage.getItem('token'))
-    fetch('http://balance-platform.localhost/api/profile')
+    fetch('http://balance-platform.localhost/api/profile', {
+      method: 'GET',
+      headers: {
+        "Authorization": `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    })
       .then((res) => res.json())
       .then((json) => {
           dispatch({
@@ -47,9 +54,16 @@ export const startProfile = () => {
 
 
 export const startRating = () => {
+  const token = JSON.parse(localStorage.getItem(('token')))
   return (dispatch) => {
     dispatch({type: 'profile/start'})
-    fetch('http://balance-platform.localhost/api/rating')
+    fetch('http://balance-platform.localhost/api/rating', {
+        method: 'GET',
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      })
       .then((res) => res.json())
       .then((json) => {
         dispatch({
