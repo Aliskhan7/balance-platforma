@@ -10,6 +10,9 @@ import Tasks from './pages/Tasks'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import TypingGame from './pages/TypingGame'
+import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { startProfile } from './redux/actions'
 
 function App() {
 

@@ -1,13 +1,21 @@
-import { applyMiddleware, combineReducers, createStore } from 'redux'
-import pages from './pages'
-import thunk from 'redux-thunk'
-import links from './links'
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { createLogger } from 'redux-logger/src';
+import {auth} from "./auth";
+import { profile } from './profile'
+import { rating } from './rating'
 
-const rootReducers = combineReducers({
-  pages: pages,
-  links: links,
-})
+const logger = createLogger({
+  diff: true,
+  collapsed: true,
+});
 
-const store = createStore(rootReducers, applyMiddleware(thunk));
+const rootReducer = combineReducers({
+  auth: auth,
+  profile: profile,
+  rating: rating
+});
+
+const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
 export default store;

@@ -4,7 +4,7 @@
     width: 270px;
     height: 100vh;
 
-
+    display: block;
     background: #fff;
 }
 .sideBar__list{
