@@ -2,6 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 
+.cardStatusBlue{
+    color: #2984FF;
+    text-align: center;
+    width: 20%;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 1px solid #2984FF;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 28px;
+}
+
+.cardTitleImportanceSecondary{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #828282;
+}
+
 .taskContainer{
     width: 100%;
 }
