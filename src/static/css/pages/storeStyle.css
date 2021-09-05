@@ -79,10 +79,14 @@
 }
 
 .storeProduct {
+    width: 40%;
     background: white;
     border-radius: 4px;
-    padding: 24px 24px 33px 24px;
+    padding: 24px 24px 24px 24px;
     display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .storeProductIcon {
@@ -138,6 +142,8 @@
     border: 1px solid #FF5028;
     padding: 12px 32px 12px 32px;
     color: #FF5028;
+    word-wrap: normal;
+    flex-wrap: wrap;
 }
 
 .addCart:hover{
@@ -147,5 +153,6 @@
 .carousel{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
