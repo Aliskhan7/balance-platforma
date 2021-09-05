@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 .level_block {
     padding: 24px;
-    width: 350px;
+    width: 35%;
     border-radius: 4px;
     flex-direction: column;
     margin-right: 20px;
@@ -25,12 +25,8 @@
     margin-left: 6px;
 }
 
-.progressBar {
-    height: 8px;
-    width: 212px;
-    border-radius: 40px;
-    margin-top: 25px;
-    margin-bottom: -22px;
+.currentLevel {
+    padding-bottom: 25px;
 }
 
 .nextLevelInfo {
@@ -39,21 +35,25 @@
     font-size: 12px;
 }
 
-.emptyLine {
-    position: relative;
+.nextLevelInfo {
+    margin-top: -24px;
 }
 
-.fillLineLine {
+.nextLevelIcon {
     position: relative;
-    top: -52px;
-}
-
-.nextLevel {
-    position: relative;
+    left: 300px;
     top: -33px;
-    left: 140px;
 }
 
-.nextLevelInfo{
-    margin-top: 60px;
+.nextLevelNumber {
+    position: relative;
+    left: 315px;
+    top: -70px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: white;
 }
